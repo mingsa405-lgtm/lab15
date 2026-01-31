@@ -16,4 +16,12 @@ int main(){
 
 	return 0;
 }
-
+void shuffle(int *e,int *f,int *g,int *m ){
+     int r=rand()%6;
+     if(r == 0){swap(*e,*f);}
+     else if(r == 1){swap(*e,*g);}
+     else if(r == 2){swap(*e,*m);}
+     else if(r == 3){swap(*f,*g);}
+      else if(r == 4){swap(*f,*m);}
+      else if(r == 5){swap(*g,*m);}
+}
